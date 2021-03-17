@@ -17,7 +17,7 @@ e.g `Export-CountersToZabbixTemplate.ps1 'DHCP Server'`
 
 # Caveats
 
-This is a *very* simple script. It simply gets all Counters available for a given CounterSet and loops the <item> part of a Zabbix 5.0 template.
+This is a *very* simple script. It simply gets all Counters available for a given CounterSet and loops the `<item>` part of a Zabbix 5.0 template.
   - Don't expect anything more than a template to be created with basic items.
   - It does not do discovery. 
   - It does not do triggers.
