@@ -8,7 +8,7 @@ I present to you *PerformanceCountersToZabbixTemplate*!
 
 # Usage
 
-Export-CountersToZabbixTemplate.ps1 <CounterSetName>
+`Export-CountersToZabbixTemplate.ps1 <CounterSetName>`
 e.g `Export-CountersToZabbixTemplate.ps1 'DHCP Server'`
 
 # Obtaining CounterSetName
