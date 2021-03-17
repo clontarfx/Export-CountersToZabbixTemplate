@@ -14,3 +14,13 @@ e.g `Export-CountersToZabbixTemplate.ps1 'DHCP Server'`
 # Obtaining CounterSetName
 
 `(Get-Counter -ListSet *).CounterSetName`
+
+# Caveats
+
+This is a *very* simple script. It simply gets all Counters available for a given CounterSet and loops the <item> part of a Zabbix 5.0 template.
+  - Don't expect anything more than a template to be created with basic items.
+  - It does not do discovery. 
+  - It does not do triggers.
+  - It doesn't do anything except create an appropriately named template with items for the given CounterSet.
+
+As time goes on I might get a bit fancy with it, but for now, enjoy a valid Zabbix 5.0 template for your Performance Counter of choice!
