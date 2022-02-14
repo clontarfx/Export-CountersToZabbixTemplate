@@ -2,6 +2,9 @@ param($CounterSet)
 
 clear
 
+$CounterCount=((Get-Counter -ListSet $CounterSet).Counter).Count
+$ScreenVSize=[math]::Round(($CounterCount/2),0)+1
+
 Write-Host "
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <zabbix_export>
@@ -48,7 +51,7 @@ Write-Host "          </items>
 		  <screen>
 					<name>$CounterSet</name>
 						<hsize>2</hsize>
-						<vsize>100</vsize>
+						<vsize>$ScreenVSize</vsize>
 						<screen_items>"
 
 $x=0
