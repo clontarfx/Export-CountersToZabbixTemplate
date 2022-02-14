@@ -18,14 +18,12 @@ e.g `Export-CountersToZabbixTemplate.ps1 'DHCP Server'`
 # Caveats
 
 You **will** get;
-  ✔ Items
-  ✔ Graphs
-  ✔ Screens
+  - ✔ Items
+  - ✔ Graphs
+  - ✔ Screens
 
 You **will not** get;
-  - Anything more than a template to be created with basic items, graphs and screens.
-  - It does not do discovery. 
-  - It does not do triggers.
-  - It doesn't do anything except create an appropriately named template with items, graphs and screens for the given CounterSet.
+  - ❌ Low Level Discovery (I might write a different Template for LLD for Counters)
+  - ❌ Triggers (How do I know what you consider a problem?)
 
 As time goes on I might get a bit fancy with it, but for now, enjoy a valid Zabbix 5.0 template for your Performance Counter of choice!
